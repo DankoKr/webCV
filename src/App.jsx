@@ -1,14 +1,14 @@
-import './App.css';
-import ChannelBar from './components/Channel';
-import ContentContainer from './components/ContentContainer';
-import SideBar from './components/SideBar';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Layout from './components/layouts/Layout';
+//import SideBar from './components/SideBar';
 
 function App() {
   return (
     <div className='flex'>
-      <SideBar />
-      <ChannelBar />
-      <ContentContainer />
+      <Routes>
+        <Route path='/' element={<Layout />} />
+      </Routes>
     </div>
   );
 }
