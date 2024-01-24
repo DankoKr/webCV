@@ -1,8 +1,4 @@
 .home-page {
-  .container {
-    height: 100vh; /* Instead of using max-height */
-  }
-
   .text-zone {
     position: absolute;
     left: 18%;
@@ -100,38 +96,32 @@
     display: none;
   }
 
-  .home-page .text-zone {
-    position: initial;
-    width: 100%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
+  .home-page {
+    .text-zone,
+    .programmer-zone {
+      position: static;
+      width: 100%;
+      max-height: none;
+      transform: none;
+      left: auto;
+      margin-top: 15px;
+    }
+
+    .text-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .programmer-zone {
+      display: flex;
+    }
   }
 
   .home-page .flat-button {
-    float: none;
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
-  }
-
-  .logo-container {
-    position: relative;
-    width: 100px;
-    height: auto;
-    top: 50px;
-    right: 0;
-    box-sizing: border-box;
-    margin: auto;
-    left: 0;
-  }
-
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
+    width: 100%;
+    max-width: 200px;
+    margin: 25px auto;
   }
 }
