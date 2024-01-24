@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../components/AnimatedLetters';
+import Programmer from '../assets/images/Programmer.png';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -62,6 +63,9 @@ const Home = () => {
           <Link to='/contact' className='flat-button'>
             CONTACT ME
           </Link>
+        </div>
+        <div className='programmer-zone'>
+          <img className='programmer' src={Programmer} />
         </div>
       </div>
 

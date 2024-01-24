@@ -1,7 +1,7 @@
 import './SideBar.scss';
 import { useState } from 'react';
-import LogoS from '../assets/images/logo-s.png';
-import LogoSubtitle from '../assets/images/logo_sub.png';
+import Logo from '../assets/images/logo.png';
+import LogoSubtitle from '../assets/images/slogan.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -20,7 +20,7 @@ const Sidebar = () => {
   return (
     <div className='nav-bar'>
       <Link className='logo' to='/' onClick={() => setShowNav(false)}>
-        <img src={LogoS} alt='Logo' />
+        <img src={Logo} alt='Logo' />
         <img className='sub-logo' src={LogoSubtitle} alt='slobodan' />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
@@ -31,7 +31,7 @@ const Sidebar = () => {
           to='/'
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faHome} color='yellow' />
+          <FontAwesomeIcon icon={faHome} color='black' />
         </NavLink>
         <NavLink
           activeclassname='active'
@@ -39,7 +39,7 @@ const Sidebar = () => {
           to='/about'
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faUser} color='yellow' />
+          <FontAwesomeIcon icon={faUser} color='black' />
         </NavLink>
         <NavLink
           activeclassname='active'
@@ -47,7 +47,7 @@ const Sidebar = () => {
           to='/projects'
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSuitcase} color='yellow' />
+          <FontAwesomeIcon icon={faSuitcase} color='black' />
         </NavLink>
         <NavLink
           activeclassname='active'
@@ -55,12 +55,12 @@ const Sidebar = () => {
           to='/contact'
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faEnvelope} color='yellow' />
+          <FontAwesomeIcon icon={faEnvelope} color='black' />
         </NavLink>
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
-          color='#ffd700'
+          color='white'
           size='3x'
           className='close-icon'
         />
@@ -70,7 +70,7 @@ const Sidebar = () => {
           <a href='' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
               icon={faLinkedin}
-              color='#4d4d4e'
+              color='black'
               className='anchor-icon'
             />
           </a>
@@ -79,7 +79,7 @@ const Sidebar = () => {
           <a href='' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
               icon={faGithub}
-              color='#4d4d4e'
+              color='black'
               className='anchor-icon'
             />
           </a>
@@ -88,7 +88,7 @@ const Sidebar = () => {
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color='#ffd700'
+        color='white'
         size='3x'
         className='hamburger-icon'
       />
