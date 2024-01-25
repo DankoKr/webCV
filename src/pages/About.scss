@@ -1,3 +1,57 @@
+.about-page {
+  .text-zone {
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 56px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: black;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: -18px;
+      opacity: 0.6;
+    }
+
+    &:after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore', cursive;
+      color: black;
+      font-size: 18px;
+      line-height: 0px;
+      position: absolute;
+      left: -38px;
+      bottom: -25px;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width: fit-content;
+    animation: pulse 1s;
+  }
+}
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -13,7 +67,7 @@
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 12s;
+  animation-duration: 18s;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
