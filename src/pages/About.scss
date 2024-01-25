@@ -137,27 +137,42 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .tags,
-  .about-page h1:before,
-  .about-page h1:after {
-    display: none;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; // Ensure the container takes the full height of the viewport
   }
 
-  .about-page {
-    .text-zone {
-      position: static;
-      width: 100%;
-      max-height: none;
-      transform: none;
-      left: auto;
-      margin-top: 15px;
-    }
+  .text-zone {
+    position: static;
+    width: 100%;
+    max-height: none;
+    transform: none;
+    text-align: center;
+    margin-top: 15px;
 
-    .text-zone {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    h1 {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .stage-cube-cont {
+    width: 100%;
+    margin-top: 85px;
+    text-align: center;
+    position: static;
+    overflow: visible; /* Change overflow to visible for smaller screens */
+
+    .cubespinner {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      position: relative;
     }
   }
 }
