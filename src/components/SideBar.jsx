@@ -67,7 +67,11 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-          <a href='' target='_blank' rel='noreferrer'>
+          <a
+            href='https://www.linkedin.com/in/danko-kralski-40a56228b'
+            target='_blank'
+            rel='noreferrer'
+          >
             <FontAwesomeIcon
               icon={faLinkedin}
               color='black'
@@ -76,7 +80,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a href='' target='_blank' rel='noreferrer'>
+          <a href='https://github.com/DankoKr' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon
               icon={faGithub}
               color='black'

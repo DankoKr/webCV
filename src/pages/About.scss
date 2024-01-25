@@ -9,6 +9,7 @@
   }
 
   h1 {
+    position: relative;
     color: #fff;
     font-size: 56px;
     line-height: 53px;
@@ -42,32 +43,33 @@
   }
 
   p {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #fff;
+    color: black;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
     font-family: sans-serif;
-    font-weight: 300;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
     max-width: fit-content;
-    animation: pulse 1s;
   }
 }
 
 .stage-cube-cont {
-  width: 50%;
   height: 100%;
-  top: 0;
   padding-top: 18%;
-  margin-left: 0;
-  position: absolute;
-  right: 0;
   overflow: hidden;
+  position: relative;
+  left: 68%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
 }
 
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 18s;
+  animation-duration: 15s;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
@@ -118,10 +120,10 @@
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   16% {
-    transform: rotateY(-90deg) rotateZ(90deg);
+    transform: rotateY(-90deg);
   }
   33% {
-    transform: rotateY(-90deg) rotateX(90deg);
+    transform: rotateY(-90deg) rotateZ(90deg);
   }
   50% {
     transform: rotateY(-180deg) rotateZ(90deg);
@@ -131,5 +133,31 @@
   }
   83% {
     transform: rotateX(90deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .about-page h1:before,
+  .about-page h1:after {
+    display: none;
+  }
+
+  .about-page {
+    .text-zone {
+      position: static;
+      width: 100%;
+      max-height: none;
+      transform: none;
+      left: auto;
+      margin-top: 15px;
+    }
+
+    .text-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
