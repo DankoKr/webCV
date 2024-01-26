@@ -142,7 +142,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; // Ensure the container takes the full height of the viewport
   }
 
   .text-zone {
@@ -166,7 +165,7 @@
     margin-top: 85px;
     text-align: center;
     position: static;
-    overflow: visible; /* Change overflow to visible for smaller screens */
+    overflow: visible;
 
     .cubespinner {
       width: 200px;

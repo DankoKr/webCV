@@ -35,7 +35,7 @@ const About = () => {
           <br />
           <p>
             I'm a very ambitious full-stack developer looking for the
-            opportunity to work on challenging and diverse projects.
+            opportunity to work on challenging projects.
           </p>
           <p>
             I'm quiet confident, naturally curious, and continuously working on
