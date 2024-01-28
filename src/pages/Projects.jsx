@@ -22,13 +22,15 @@ const Projects = () => {
     },
   ];
   return (
-    <div className=''>
-      <Sidebar />
-      <div className='grid grid-cols-4 gap-4'>
+    <div className='flex'>
+      <div className='w-1/4'>
+        <Sidebar />
+      </div>
+      <div className='w-3/4 flex flex-wrap gap-8 mt-20 mr-20'>
         {projects.map((project) => (
           <div
             key={project.id}
-            className='max-w-sm rounded overflow-hidden shadow-lg'
+            className='max-w-sm rounded overflow-hidden shadow-lg w-full md:w-1/2 lg:w-1/3 xl:w-1/4'
           >
             <img
               className='w-full'
