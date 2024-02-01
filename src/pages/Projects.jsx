@@ -1,36 +1,12 @@
 import Loader from 'react-loaders';
 import Sidebar from '../components/SideBar';
 import { useEffect, useState } from 'react';
+import projects from '../constants/projects';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
-  const projects = [
-    {
-      id: 1,
-      title: 'Project18888888888888',
-      techStack: ['stack1', 'stack2'],
-    },
-    {
-      id: 2,
-      title: 'Project2',
-      techStack: ['stack1', 'stack2'],
-    },
-    {
-      id: 3,
-      title: 'Project3',
-      techStack: ['stack1', 'stack2', 'stack3', 'stack4'],
-    },
-    {
-      id: 4,
-      title: 'Project1',
-      techStack: ['stack1', 'stack2'],
-    },
-    {
-      id: 5,
-      title: 'Project2',
-      techStack: ['stack1', 'stack2'],
-    },
-  ];
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
@@ -54,7 +30,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`max-w-sm rounded overflow-hidden shadow-lg w-full md:w-1/2 lg:w-1/3 xl:w-1/4 hover:scale-105 animate__animated ${
+                className={`max-w-sm rounded overflow-hidden bg-zinc-200 shadow-lg w-full md:w-1/2 lg:w-1/3 xl:w-1/4 animate__animated ${
                   index % 2 === 0
                     ? 'animate__fadeInLeft'
                     : 'animate__fadeInRight'
@@ -62,9 +38,12 @@ const Projects = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img
-                  className='w-full'
+                  className='w-full hover:scale-105 cursor-pointer'
                   src='https://th.bing.com/th/id/OIP.zqlCSVVC-v0Hh0qs-q-eBwHaEK?rs=1&pid=ImgDetMain'
                   alt='project picture'
+                  onClick={() => {
+                    navigate(`/project-details/${project.id}`);
+                  }}
                 />
                 <div className='px-6 py-4'>
                   <div className='font-bold text-xl'>{project.title}</div>
@@ -73,7 +52,7 @@ const Projects = () => {
                   {project.techStack.map((tech) => (
                     <div
                       key={tech}
-                      className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'
+                      className='inline-block bg-orange-400 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2'
                     >
                       <span>{tech}</span>
                     </div>
