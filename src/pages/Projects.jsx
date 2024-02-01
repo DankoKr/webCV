@@ -51,10 +51,15 @@ const Projects = () => {
             <Sidebar />
           </div>
           <div className='w-3/4 flex flex-wrap gap-8 mt-20 mr-20 mb-5'>
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <div
                 key={project.id}
-                className='max-w-sm rounded overflow-hidden shadow-lg w-full md:w-1/2 lg:w-1/3 xl:w-1/4'
+                className={`max-w-sm rounded overflow-hidden shadow-lg w-full md:w-1/2 lg:w-1/3 xl:w-1/4 hover:scale-105 animate__animated ${
+                  index % 2 === 0
+                    ? 'animate__fadeInLeft'
+                    : 'animate__fadeInRight'
+                }`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img
                   className='w-full'
