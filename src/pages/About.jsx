@@ -34,11 +34,11 @@ const About = () => {
           </h1>
           <br />
           <p>
-            I'm a very ambitious full-stack developer looking for the
+            I am a very ambitious full-stack developer looking for the
             opportunity to work on challenging projects.
           </p>
           <p>
-            I'm quiet confident, naturally curious, and continuously working on
+            I am quiet confident, naturally curious, and continuously working on
             improving my skills.
           </p>
           <p>
