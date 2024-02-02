@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/project-details/:projectId'>
           <Route index element={<ProjectDetails />} />
         </Route>
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );
