@@ -46,7 +46,7 @@
     color: black;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -157,6 +157,10 @@
       &:after {
         display: none;
       }
+    }
+
+    p {
+      font-size: 15px;
     }
   }
 
