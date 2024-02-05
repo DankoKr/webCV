@@ -1,28 +1,28 @@
 const projects = [
   {
     id: 1,
-    title: 'Project18888888888888',
-    techStack: ['stack1', 'stack2'],
+    title: 'Babysita API',
+    techStack: ['#Java Spring boot', '#MySQL', '#CI/CD'],
   },
   {
     id: 2,
-    title: 'Project2333',
-    techStack: ['stack1', 'stack2'],
+    title: 'Babysita Web',
+    techStack: ['#React + Vite', '#CSS', '#JavaScript'],
   },
   {
     id: 3,
-    title: 'Project3',
-    techStack: ['stack1', 'stack2', 'stack3', 'stack4'],
+    title: 'Ordina Office',
+    techStack: ['#TailwindCSS', '#React', '#NodeJs', '#MSAL'],
   },
   {
     id: 4,
-    title: 'Project1',
-    techStack: ['stack1', 'stack2'],
+    title: 'BCU Website',
+    techStack: ['#JavaScript', '#CSS', '#HTML'],
   },
   {
     id: 5,
-    title: 'Project2',
-    techStack: ['stack1', 'stack2'],
+    title: 'Study Fitness',
+    techStack: ['#C#', '#Razor pages', '#MSSQL', '#Win Forms'],
   },
 ];
 

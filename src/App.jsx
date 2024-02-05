@@ -20,7 +20,7 @@ function App() {
         <Route path='/projects'>
           <Route index element={<Projects />} />
         </Route>
-        <Route path='/project-details/:projectId'>
+        <Route path='/project-details'>
           <Route index element={<ProjectDetails />} />
         </Route>
         <Route path='*' element={<NotFound />} />

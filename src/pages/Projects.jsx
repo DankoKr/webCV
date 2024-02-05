@@ -42,13 +42,15 @@ const Projects = () => {
                   src='https://th.bing.com/th/id/OIP.zqlCSVVC-v0Hh0qs-q-eBwHaEK?rs=1&pid=ImgDetMain'
                   alt='project picture'
                   onClick={() => {
-                    navigate(`/project-details/${project.id}`);
+                    navigate('/project-details', {
+                      state: { project: project },
+                    });
                   }}
                 />
                 <div className='px-6 py-4'>
                   <div className='font-bold text-xl'>{project.title}</div>
                 </div>
-                <div className='px-6 pt-4 pb-2'>
+                <div className='px-6 pt-1 pb-2'>
                   {project.techStack.map((tech) => (
                     <div
                       key={tech}
