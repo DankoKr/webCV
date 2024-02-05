@@ -38,12 +38,12 @@ const About = () => {
             opportunity to work on challenging projects.
           </p>
           <p>
-            I am quiet confident, naturally curious, and continuously working on
+            I am quite confident, naturally curious, and continuously working on
             improving my skills.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, sports fanatic and the guy that always finds a way.
+            If I were to define myself in one sentence, I would say a family
+            person, sports fanatic and the guy who always finds a way.
           </p>
         </div>
 

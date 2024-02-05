@@ -1,10 +1,9 @@
 import { useLocation } from 'react-router-dom';
 import Sidebar from '../components/SideBar';
-import Video from '../assets/images/Ordina Web App.mp4';
 
 const ProjectDetails = () => {
   const location = useLocation();
-  const projectTitle = location.state?.project.title;
+  const project = location.state?.project;
   return (
     <div className='flex flex-col lg:flex-row'>
       <Sidebar />
@@ -17,14 +16,12 @@ const ProjectDetails = () => {
               controls
               className='mx-auto rounded-lg'
             >
-              <source src={Video} type='video/mp4' />
-              Your browser does not support the video tag.
+              <source src={project.video} type='video/mp4' />
             </video>
           </div>
           <a
-            href='#'
+            href={project.sourceCodeURL}
             className='inline-flex items-center mt-4 px-5 py-2.5 text-sm font-sans-serif tracking-4px text-center text-white border-solid border-2 border-slate-900 hover:bg-[#ff8c42]'
-            // <span className='font-sans-serif tracking-4px'>
           >
             Source Code
             <svg
@@ -45,21 +42,9 @@ const ProjectDetails = () => {
           </a>
 
           <h2 className='mt-4 text-3xl font-semibold text-white'>
-            {projectTitle}
+            {project.title}
           </h2>
-          <p className='mt-2 text-lg'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <p className='mt-2 text-lg'>{project.description}</p>
         </div>
       </div>
     </div>
