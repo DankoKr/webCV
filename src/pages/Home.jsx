@@ -1,9 +1,9 @@
 import './Home.scss';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../components/AnimatedLetters';
 import Programmer from '../assets/images/Programmer.png';
+import CV from '../assets/CV intern.pdf';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -46,7 +46,7 @@ const Home = () => {
             <span className={`${letterClass} _12`}>i,</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <span className={`${letterClass} _14`}>&apos;m</span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -60,9 +60,9 @@ const Home = () => {
             />
           </h1>
           <h2>Full Stack Developer</h2>
-          <Link to='/contact' className='flat-button'>
+          <a href={CV} className='flat-button'>
             CHECK CV
-          </Link>
+          </a>
         </div>
         <div className='programmer-zone'>
           <img className='programmer' src={Programmer} />
