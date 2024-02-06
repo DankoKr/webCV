@@ -1,8 +1,13 @@
 import OrdinaVideo from '../assets/videos/Ordina Web App.mp4';
+import BabysitaImage from '../assets/images/BABYSITA.png';
+import StudyFitnessImage from '../assets/images/Logo Fitness.png';
+import OrdinaImage from '../assets/images/ordinaLogo.jpg';
+import BCUImage from '../assets/images/BCU Logo.png';
 
 const projects = [
   {
     id: 1,
+    mainImage: BabysitaImage,
     title: 'Babysita API',
     techStack: ['#Java Spring boot', '#MySQL', '#CI/CD'],
     description:
@@ -12,6 +17,7 @@ const projects = [
   },
   {
     id: 2,
+    mainImage: BabysitaImage,
     title: 'Babysita Web',
     techStack: ['#React + Vite', '#CSS', '#JavaScript'],
     description:
@@ -21,6 +27,7 @@ const projects = [
   },
   {
     id: 3,
+    mainImage: OrdinaImage,
     title: 'Ordina Office',
     techStack: ['#TailwindCSS', '#React', '#NodeJs', '#MSAL'],
     description:
@@ -30,6 +37,7 @@ const projects = [
   },
   {
     id: 4,
+    mainImage: BCUImage,
     title: 'BCU Website',
     techStack: ['#JavaScript', '#CSS', '#HTML'],
     description:
@@ -39,6 +47,7 @@ const projects = [
   },
   {
     id: 5,
+    mainImage: StudyFitnessImage,
     title: 'Study Fitness',
     techStack: ['#C#', '#Razor pages', '#MSSQL', '#Win Forms'],
     description:

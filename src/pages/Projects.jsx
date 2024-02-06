@@ -38,8 +38,8 @@ const Projects = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img
-                  className='w-full hover:scale-105 cursor-pointer'
-                  src='https://th.bing.com/th/id/OIP.zqlCSVVC-v0Hh0qs-q-eBwHaEK?rs=1&pid=ImgDetMain'
+                  className='w-full h-40 hover:scale-105 cursor-pointer'
+                  src={project.mainImage}
                   alt='project picture'
                   onClick={() => {
                     navigate('/project-details', {
