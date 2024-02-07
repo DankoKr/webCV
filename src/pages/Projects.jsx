@@ -38,7 +38,7 @@ const Projects = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img
-                  className='w-full h-40 hover:scale-105 cursor-pointer'
+                  className='w-full hover:scale-105 cursor-pointer'
                   src={project.mainImage}
                   alt='project picture'
                   onClick={() => {
