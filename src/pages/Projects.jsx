@@ -26,7 +26,7 @@ const Projects = () => {
           <div className='w-1/4'>
             <Sidebar />
           </div>
-          <div className='w-3/4 flex flex-wrap gap-8 mt-20 mr-20 mb-5'>
+          <div className='w-3/4 flex flex-wrap gap-3 mt-20 mr-20 mb-5'>
             {projects.map((project, index) => (
               <div
                 key={project.id}
