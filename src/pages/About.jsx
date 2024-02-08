@@ -42,8 +42,8 @@ const About = () => {
             improving my skills.
           </p>
           <p>
-            If I were to define myself in one sentence, I would say a family
-            person, sports fanatic and the guy who always finds a way.
+            If I were to define myself in one sentence, I would say eager to
+            learn every day, sports fanatic and the guy who always finds a way.
           </p>
         </div>
 

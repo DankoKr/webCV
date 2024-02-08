@@ -45,6 +45,12 @@ const ProjectDetails = () => {
             {project.title}
           </h2>
           <p className='mt-2 text-lg'>{project.description}</p>
+          <a
+            href='/webCV/#/projects'
+            className='inline-flex items-center mt-4 px-5 py-2.5 text-sm font-sans-serif tracking-4px text-rigth text-white border-solid border-2 border-slate-900 hover:bg-[#ff8c42]'
+          >
+            Go Back
+          </a>
         </div>
       </div>
     </div>
