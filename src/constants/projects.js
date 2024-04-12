@@ -16,7 +16,7 @@ const projects = [
     description:
       'The Babysita API serves as the backbone for the Babysita Web platform. Developed during my third semester at Fontys, this project is written in Java and leverages the Spring Boot framework.Throughout the development process, I immersed myself in mastering both the intricacies of the Java language syntax and the Spring Boot framework. Notably, I implemented Object-Relational Mapping (ORM) using JPA to seamlessly interact with the MySQL database.The project is hosted on GitLab, where a robust CI/CD pipeline is in place. This pipeline ensures code quality through automated checks using SonarQube. Finally, a Docker image is generated and stored on Docker Hub, streamlining deployment processes. For further insights and instructions, please refer to the README file within the source code repository.',
     video: BabysitaVideo,
-    sourceCodeURL: 'https://git.fhict.nl/I500872/babysita',
+    sourceCodeURL: 'https://github.com/DankoKr/babysita',
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     description:
       'This Frontend section complements the Babysita API, forming a key part of my first full-stack project undertaken during my third semester at Fontys. Built with React + Vite, it reflects my journey into full-stack development. I chose JSX files over pure JS for their readability and ease of maintenance, aligning with my coding preferences. The project aimed to seamlessly integrate a custom API with a user-friendly website. For further insights and instructions, please refer to the README file within the source code repository.',
     video: BabysitaVideo,
-    sourceCodeURL: 'https://git.fhict.nl/I500872/babysita-web',
+    sourceCodeURL: 'https://github.com/DankoKr/babysita-web',
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ const projects = [
     description:
       'Study Fitness stands as my inaugural significant project, crafted during my second semester at Fontys. Built with Razor pages and C#, it is a straightforward website boasting essential features like appointment scheduling with trainers and exercise sorting algorithms. One of its highlights is a quiz that provides personalized trainer recommendations upon completion. While the code may not be flawless, it marks the beginning of my coding journey, and I take pride in what I achieved with my initial knowledge (The widows forms application is missing in the video due to restrictions when sharing on my PC). For further insights and instructions, please refer to the README file within the source code repository.',
     video: StudyFitnessVideo,
-    sourceCodeURL: 'https://git.fhict.nl/I500872/study-fitness',
+    sourceCodeURL: 'https://github.com/DankoKr/study-fitness',
   },
 ];
 
