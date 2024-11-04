@@ -25,7 +25,7 @@ Make sure you have the following installed on your development machine:
 2. Navigate to the project directory:
 
    ```bash
-   cd webCV-main
+   cd webCV
    ```
 
 3. Install the dependencies:

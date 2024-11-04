@@ -1,15 +1,20 @@
-import OrdinaVideo from '../assets/videos/Ordina Web App.mp4';
 import BabysitaVideo from '../assets/videos/Babysita video.mp4';
-import BCUVideo from '../assets/videos/BCU video.mp4';
-import StudyFitnessVideo from '../assets/videos/StudyFitness video.mp4';
 import BabysitaImage from '../assets/images/BABYSITA.png';
-import StudyFitnessImage from '../assets/images/Logo Fitness.png';
-import OrdinaImage from '../assets/images/ordinaLogo.jpg';
-import BCUImage from '../assets/images/BCU Logo.png';
+import EcuImage from '../assets/images/ecu.png';
 
 const projects = [
   {
     id: 1,
+    mainImage: EcuImage,
+    title: 'ECU Intranet',
+    techStack: ['#React', '#PostgreSQL', '#ExpressJS'],
+    description:
+      'This is a full-stack application I developed for the European Cheer Union (https://icueurope.org/). It serves as an administrative platform designed to manage community members and streamline document-related administrative tasks. NOTE: The source code shared here is not the final version!',
+    video: null,
+    sourceCodeURL: 'https://github.com/DankoKr/ecu',
+  },
+  {
+    id: 2,
     mainImage: BabysitaImage,
     title: 'Babysita API',
     techStack: ['#Java Spring boot', '#MySQL', '#CI/CD'],
@@ -17,46 +22,6 @@ const projects = [
       'The Babysita API serves as the backbone for the Babysita Web platform. Developed during my third semester at Fontys, this project is written in Java and leverages the Spring Boot framework.Throughout the development process, I immersed myself in mastering both the intricacies of the Java language syntax and the Spring Boot framework. Notably, I implemented Object-Relational Mapping (ORM) using JPA to seamlessly interact with the MySQL database.The project is hosted on GitLab, where a robust CI/CD pipeline is in place. This pipeline ensures code quality through automated checks using SonarQube. Finally, a Docker image is generated and stored on Docker Hub, streamlining deployment processes. For further insights and instructions, please refer to the README file within the source code repository.',
     video: BabysitaVideo,
     sourceCodeURL: 'https://github.com/DankoKr/babysita',
-  },
-  {
-    id: 2,
-    mainImage: BabysitaImage,
-    title: 'Babysita Web',
-    techStack: ['#React + Vite', '#CSS', '#JavaScript'],
-    description:
-      'This Frontend section complements the Babysita API, forming a key part of my first full-stack project undertaken during my third semester at Fontys. Built with React + Vite, it reflects my journey into full-stack development. I chose JSX files over pure JS for their readability and ease of maintenance, aligning with my coding preferences. The project aimed to seamlessly integrate a custom API with a user-friendly website. For further insights and instructions, please refer to the README file within the source code repository.',
-    video: BabysitaVideo,
-    sourceCodeURL: 'https://github.com/DankoKr/babysita-web',
-  },
-  {
-    id: 3,
-    mainImage: OrdinaImage,
-    title: 'Ordina Office',
-    techStack: ['#TailwindCSS', '#React', '#NodeJs', '#MSAL'],
-    description:
-      'Ordina Office marked my debut in working with a real client, Ordina company, during my third semester at Fontys. As a full-stack platform, it allowed Ordina employees to manage office check-ins/outs and schedule meetings with colleagues. We adopted SCRUM methodology for development, with me serving as the SCRUM master. While the process had its challenges, we successfully delivered the Minimum Viable Product (MVP) on schedule. The project provided invaluable experience in fostering a productive work environment and engaging with clients directly. Contributing to both the API server and the website allowed me to hone my leadership and teamwork skills significantly.',
-    video: OrdinaVideo,
-    sourceCodeURL: 'https://www.ordina.com/',
-  },
-  {
-    id: 4,
-    mainImage: BCUImage,
-    title: 'BCU Website',
-    techStack: ['#JavaScript', '#CSS', '#HTML'],
-    description:
-      'I was entrusted with designing the website for the Bulgarian Cheer Union. It serves as a static platform offering information about the union and a membership application. Future plans involve expanding its functionality to include a newsletter, distributing the latest news to subscribers. This project was particularly rewarding as it involved collaborating with a real client, representing my home country. Successfully completing the task resulted in the creation of the official website, accessible by clicking the button above.',
-    video: BCUVideo,
-    sourceCodeURL: 'https://www.bulcu.eu/',
-  },
-  {
-    id: 5,
-    mainImage: StudyFitnessImage,
-    title: 'Study Fitness',
-    techStack: ['#C#', '#Razor pages', '#MSSQL', '#Win Forms'],
-    description:
-      'Study Fitness stands as my inaugural significant project, crafted during my second semester at Fontys. Built with Razor pages and C#, it is a straightforward website boasting essential features like appointment scheduling with trainers and exercise sorting algorithms. One of its highlights is a quiz that provides personalized trainer recommendations upon completion. While the code may not be flawless, it marks the beginning of my coding journey, and I take pride in what I achieved with my initial knowledge (The widows forms application is missing in the video due to restrictions when sharing on my PC). For further insights and instructions, please refer to the README file within the source code repository.',
-    video: StudyFitnessVideo,
-    sourceCodeURL: 'https://github.com/DankoKr/study-fitness',
   },
 ];
 

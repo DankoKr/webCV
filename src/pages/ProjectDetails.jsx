@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import Sidebar from '../components/SideBar';
+import NoVideoImage from '../assets/images/no-video.png';
 
 const ProjectDetails = () => {
   const location = useLocation();
@@ -10,14 +11,24 @@ const ProjectDetails = () => {
       <div className='flex-1 p-4 lg:p-8 animate__animated animate__zoomIn'>
         <div className='mx-auto max-w-4xl'>
           <div className='text-center'>
-            <video
-              width='600'
-              height='400'
-              controls
-              className='mx-auto rounded-lg'
-            >
-              <source src={project.video} type='video/mp4' />
-            </video>
+            {project.video ? (
+              <video
+                width='600'
+                height='400'
+                controls
+                className='mx-auto rounded-lg'
+              >
+                <source src={project.video} type='video/mp4' />
+              </video>
+            ) : (
+              <img
+                src={NoVideoImage}
+                alt='No video image'
+                width='600'
+                height='400'
+                className='mx-auto rounded-lg'
+              />
+            )}
           </div>
           <a
             href={project.sourceCodeURL}
@@ -47,7 +58,7 @@ const ProjectDetails = () => {
           <p className='mt-2 text-lg'>{project.description}</p>
           <a
             href='/webCV/#/projects'
-            className='inline-flex items-center mt-4 px-5 py-2.5 text-sm font-sans-serif tracking-4px text-rigth text-white border-solid border-2 border-slate-900 hover:bg-[#ff8c42]'
+            className='inline-flex items-center mt-4 px-5 py-2.5 text-sm font-sans-serif tracking-4px text-right text-white border-solid border-2 border-slate-900 hover:bg-[#ff8c42]'
           >
             Go Back
           </a>
